@@ -1,8 +1,8 @@
  <?php
  // DB connection info
  $host = "localhost\sqlexpress";
- $user = "user name";
- $pwd = "password";
+ $user = "abrar";
+ $pwd = "password@12#";
  $db = "registration";
  try{
  	$conn = new PDO( "sqlsrv:Server= $host ; Database = $db ", $user, $pwd);
