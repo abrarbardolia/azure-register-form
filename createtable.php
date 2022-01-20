@@ -1,6 +1,6 @@
  <?php
  // DB connection info
- $host = "localhost\sqlexpress";
+ $host = "abrar-database-server.database.windows.net";
  $user = "abrar";
  $pwd = "password@12#";
  $db = "registration";
