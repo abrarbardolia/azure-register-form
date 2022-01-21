@@ -1,6 +1,6 @@
  <html>
  <head>
- <Title>Registration Form</Title>
+ <Title>Covid Registration Form</Title>
  <style type="text/css">
  	body { background-color: #fff; border-top: solid 10px #000;
  	    color: #333; font-size: .85em; margin: 20; padding: 20;
@@ -76,6 +76,7 @@
  	echo "<tr><th>Name</th>";
  	echo "<th>Email</th>";
   echo "<th>Mobile</th>";
+  echo "<th>covid status</th>";
  	echo "<th>Date of Testing</th></tr>";
  	foreach($registrants as $registrant) {
  		echo "<tr><td>".$registrant['name']."</td>";
