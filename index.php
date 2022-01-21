@@ -21,6 +21,7 @@
  <form method="post" action="index.php" enctype="multipart/form-data" >
        Name  <input type="text" name="name" id="name"/></br>
        Email <input type="text" name="email" id="email"/></br>
+       mobile <input type="text" name="mobile" id="mobile"/></br>
        <input type="submit" name="submit" value="Submit" />
  </form>
  <?php
@@ -41,6 +42,8 @@
  try {
  	$name = $_POST['name'];
  	$email = $_POST['email'];
+  $mobile = $_POST['mobile'];
+  
  	$date = date("Y-m-d");
  	// Insert data
  	$sql_insert = "INSERT INTO registration_tbl (name, email, date) 
@@ -48,6 +51,7 @@
  	$stmt = $conn->prepare($sql_insert);
  	$stmt->bindValue(1, $name);
  	$stmt->bindValue(2, $email);
+  	$stmt->bindValue(2, $mobile);
  	$stmt->bindValue(3, $date);
  	$stmt->execute();
  }
@@ -64,10 +68,12 @@
  	echo "<table>";
  	echo "<tr><th>Name</th>";
  	echo "<th>Email</th>";
+  echo "<th>mobile</th>";
  	echo "<th>Date</th></tr>";
  	foreach($registrants as $registrant) {
  		echo "<tr><td>".$registrant['name']."</td>";
  		echo "<td>".$registrant['email']."</td>";
+   echo "<td>".$registrant['mobile']."</td>";
  		echo "<td>".$registrant['date']."</td></tr>";
      }
   	echo "</table>";
