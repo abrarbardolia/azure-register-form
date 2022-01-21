@@ -3,7 +3,7 @@
  $host = "abrar-database-server.database.windows.net";
  $user = "abrar";
  $pwd = "password@12#";
- $db = "registration";
+ $db = "abrar-spq-database";
  try{
  	$conn = new PDO( "sqlsrv:Server= $host ; Database = $db ", $user, $pwd);
  	$conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
