@@ -23,6 +23,15 @@
        Email <input type="text" name="email" id="email"/></br>
        Mobile <input type="text" name="mobile" id="mobile"/></br>
        covid_status <input type="text" name="covid_status" id="covid_status"/></br>
+       <p>
+What is your Gender?
+<select name="formGender">
+  <option value="">Select...</option>
+  <option value="M">Male</option>
+  <option value="F">Female</option>
+</select>
+</p>
+       
        <input type="submit" name="submit" value="Submit" />
  </form>
  <?php
