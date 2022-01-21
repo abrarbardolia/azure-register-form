@@ -17,11 +17,12 @@
  </head>
  <body>
  <h1>Register here!</h1>
- <p>Fill in your name and email address, then click <strong>Submit</strong> to register.</p>
+ <p>Fill in your name. email address , mobile number & Covid Test Result & then click <strong>Submit</strong> to register.</p>
  <form method="post" action="index.php" enctype="multipart/form-data" >
        Name  <input type="text" name="name" id="name"/></br>
        Email <input type="text" name="email" id="email"/></br>
-       mobile <input type="text" name="mobile" id="mobile"/></br>
+       Mobile <input type="text" name="mobile" id="mobile"/></br>
+       Covid Status <input type="text" name="status" id="status"/></br>
        <input type="submit" name="submit" value="Submit" />
  </form>
  <?php
@@ -43,16 +44,17 @@
  	$name = $_POST['name'];
  	$email = $_POST['email'];
   $mobile = $_POST['mobile'];
-  
+  $status = $_POST['status'];
  	$date = date("Y-m-d");
  	// Insert data
- 	$sql_insert = "INSERT INTO registration_tbl (name, email, mobile , date) 
- 				   VALUES (?,?,?,?)";
+ 	$sql_insert = "INSERT INTO registration_tbl (name, email, mobile , ,status, date) 
+ 				   VALUES (?,?,?,?,?)";
  	$stmt = $conn->prepare($sql_insert);
  	$stmt->bindValue(1, $name);
  	$stmt->bindValue(2, $email);
   $stmt->bindValue(3, $mobile);
- 	$stmt->bindValue(4, $date);
+  $stmt->bindValue(4, $status); 
+ 	$stmt->bindValue(5, $date);
  	$stmt->execute();
  }
  catch(Exception $e) {
@@ -68,12 +70,13 @@
  	echo "<table>";
  	echo "<tr><th>Name</th>";
  	echo "<th>Email</th>";
-  echo "<th>mobile</th>";
- 	echo "<th>Date</th></tr>";
+  echo "<th>Mobile</th>";
+ 	echo "<th>Date of Testing</th></tr>";
  	foreach($registrants as $registrant) {
  		echo "<tr><td>".$registrant['name']."</td>";
  		echo "<td>".$registrant['email']."</td>";
    echo "<td>".$registrant['mobile']."</td>";
+   echo "<td>".$registrant['status']."</td>";
  		echo "<td>".$registrant['date']."</td></tr>";
      }
   	echo "</table>";
