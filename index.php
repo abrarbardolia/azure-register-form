@@ -79,7 +79,7 @@
   echo "<th>Covid Status</th>";
  	echo "<th>Date of Testing</th></tr>";
   
-  if ($registrants['covid_status'] == 0) 
+  if ($registrants['covid_status'] == "0") 
   {
     $result = "No";
   }
