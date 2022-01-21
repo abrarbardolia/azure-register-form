@@ -79,14 +79,7 @@
   echo "<th>Covid Status</th>";
  	echo "<th>Date of Testing</th></tr>";
   
-  if ($registrants['covid_status'] == "0") 
-  {
-    $result = "No";
-  }
-  else
-  {
-    $result = "Yes";
-   } 
+
  	foreach($registrants as $registrant) {
  		echo "<tr><td>".$registrant['name']."</td>";
  		echo "<td>".$registrant['email']."</td>";
