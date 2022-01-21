@@ -47,13 +47,13 @@
   $covidstatus = $_POST['covidstatus'];
  	$date = date("Y-m-d");
  	// Insert data
- 	$sql_insert = "INSERT INTO registration_tbl (name, email, mobile , status, date) 
+ 	$sql_insert = "INSERT INTO registration_tbl (name, email, mobile , covidstatus, date) 
  				   VALUES (?,?,?,?,?)";
  	$stmt = $conn->prepare($sql_insert);
  	$stmt->bindValue(1, $name);
  	$stmt->bindValue(2, $email);
   $stmt->bindValue(3, $mobile);
-  $stmt->bindValue(4, $status); 
+  $stmt->bindValue(4, $covidstatus); 
  	$stmt->bindValue(5, $date);
  	$stmt->execute();
  }
