@@ -28,7 +28,7 @@
  $host = "localhost\sqlexpress";
  $user = "abrar";
  $pwd = "password@12#";
- $db = "registration";
+ $db = "abrar-spq-database";    //abrar-spq-database ... registration
  // Connect to database.
  try {
  	$conn = new PDO( "sqlsrv:Server= $host ; Database = $db ", $user, $pwd);
