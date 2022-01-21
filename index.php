@@ -22,12 +22,11 @@
        Name  <input type="text" name="name" id="name"/></br>
        Email <input type="text" name="email" id="email"/></br>
        Mobile <input type="text" name="mobile" id="mobile"/></br>
-       covid_status <input type="text" name="covid_status" id="covid_status"/></br>
        Covid Status <select name="formStatus">
        <option value="">Select...</option>
        <option value="0">No</option>
        <option value="1">Yes</option>
-       </select>
+       </select></br>
        
        <input type="submit" name="submit" value="Submit" />
  </form>
