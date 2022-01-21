@@ -84,7 +84,6 @@
  		echo "<tr><td>".$registrant['name']."</td>";
  		echo "<td>".$registrant['email']."</td>";
    echo "<td>".$registrant['mobile']."</td>";
-   echo"<td>".$result"</td>";
  		echo "<td>".$registrant['date']."</td></tr>";
      }
   	echo "</table>";
