@@ -22,7 +22,7 @@
        Name  <input type="text" name="name" id="name"/></br>
        Email <input type="text" name="email" id="email"/></br>
        Mobile <input type="text" name="mobile" id="mobile"/></br>
-       covidstatus <input type="text" name=" covidstatus" id="status"/></br>
+       covidstatus <input type="text" name="covidstatus" id="covidstatus"/></br>
        <input type="submit" name="submit" value="Submit" />
  </form>
  <?php
