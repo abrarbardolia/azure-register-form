@@ -25,7 +25,7 @@
  </form>
  <?php
  // DB connection info
- $host = "localhost\sqlexpress";
+ $host = "localhost\abrar-database-server.database.windows.net";
  $user = "abrar";
  $pwd = "password@12#";
  $db = "abrar-spq-database";    //abrar-spq-database ... registration
