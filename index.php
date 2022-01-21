@@ -22,7 +22,7 @@
        Name  <input type="text" name="name" id="name"/></br>
        Email <input type="text" name="email" id="email"/></br>
        Mobile <input type="text" name="mobile" id="mobile"/></br>
-       CovidStatus <input type="text" name=" covid status" id="status"/></br>
+       covidstatus <input type="text" name=" covidstatus" id="status"/></br>
        <input type="submit" name="submit" value="Submit" />
  </form>
  <?php
@@ -44,7 +44,7 @@
  	$name = $_POST['name'];
  	$email = $_POST['email'];
   $mobile = $_POST['mobile'];
-  $covidstatus = $_POST['covid status'];
+  $covidstatus = $_POST['covidstatus'];
  	$date = date("Y-m-d");
  	// Insert data
  	$sql_insert = "INSERT INTO registration_tbl (name, email, mobile , status, date) 
@@ -76,7 +76,7 @@
  		echo "<tr><td>".$registrant['name']."</td>";
  		echo "<td>".$registrant['email']."</td>";
    echo "<td>".$registrant['mobile']."</td>";
-   echo "<td>".$registrant['covid status']."</td>";
+   echo "<td>".$registrant['covidstatus']."</td>";
  		echo "<td>".$registrant['date']."</td></tr>";
      }
   	echo "</table>";
