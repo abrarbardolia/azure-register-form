@@ -23,12 +23,12 @@
        Email <input type="text" name="email" id="email"/></br>
        Mobile <input type="text" name="mobile" id="mobile"/></br>
        Covid Status <select name="covid_status">
-       <option value="">Select...</option>
-       <option value="0">No</option>
-       <option value="1">Yes</option>
-       </select></br>
+     //  <option value="">Select...</option>
+      // <option value="0">No</option>
+      // <option value="1">Yes</option>
+      // </select></br>
        
-       <input type="submit" name="submit" value="Submit" />
+    //   <input type="submit" name="submit" value="Submit" />
  </form>
  <?php
  // DB connection info
@@ -70,7 +70,7 @@
  $sql_select = "SELECT * FROM registration_tbl";
  $stmt = $conn->query($sql_select);
  $registrants = $stmt->fetchAll(); 
-// if(count($registrants) > 0) {
+  if(count($registrants) > 0) {
  	echo "<h2>People who are registered:</h2>";
  	echo "<table>";
  	echo "<tr><th>Name</th>";
@@ -79,7 +79,7 @@
   echo "<th>Covid Status</th>";
  	echo "<th>Date of Testing</th></tr>";
   
- // $result = "Yes"
+  $result = "Yes"
 
  	foreach($registrants as $registrant) {
  		echo "<tr><td>".$registrant['name']."</td>";
