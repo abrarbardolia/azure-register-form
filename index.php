@@ -1,6 +1,6 @@
  <html>
  <head>
- <Title>Covid Report Portal</Title>
+ <Title>Covid Registration Form</Title>
  <style type="text/css">
  	body { background-color: #fff; border-top: solid 10px #000;
  	    color: #333; font-size: .85em; margin: 20; padding: 20;
@@ -17,15 +17,15 @@
  </head>
  <body>
  <h1>Register here!</h1>
- <p>Fill in below details & then click <strong>Submit</strong> to register.</p>
+ <p>Fill in your name. email address , mobile number & Covid Test Result & then click <strong>Submit</strong> to register.</p>
  <form method="post" action="index.php" enctype="multipart/form-data" >
        Name  <input type="text" name="name" id="name"/></br>
        Email <input type="text" name="email" id="email"/></br>
        Mobile <input type="text" name="mobile" id="mobile"/></br>
        Covid Status <select name="covid_status">
        <option value="">Select...</option>
-       <option value="No">No</option>
-       <option value="Yes">Yes</option>
+       <option value="N">No</option>
+       <option value="Y">Yes</option>
        </select></br>
        
        <input type="submit" name="submit" value="Submit" />
@@ -76,7 +76,7 @@
  	echo "<tr><th>Name</th>";
  	echo "<th>Email</th>";
   echo "<th>Mobile</th>";
-  echo "<th>Covid Positive</th>";
+  echo "<th>Covid Status</th>";
  	echo "<th>Date of Testing</th></tr>";
    
  	foreach($registrants as $registrant) {
