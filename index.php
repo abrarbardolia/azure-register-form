@@ -22,7 +22,7 @@
        Name  <input type="text" name="name" id="name"/></br>
        Email <input type="text" name="email" id="email"/></br>
        Mobile <input type="text" name="mobile" id="mobile"/></br>
-       Covid Status <select name="covid_status">
+       Covid Positive <select name="covid_status">
        <option value="">Select...</option>
        <option value="No">No</option>
        <option value="Yes">Yes</option>
@@ -76,7 +76,7 @@
  	echo "<tr><th>Name</th>";
  	echo "<th>Email</th>";
   echo "<th>Mobile</th>";
-  echo "<th>Covid Status</th>";
+  echo "<th>Covid Positive</th>";
  	echo "<th>Date of Testing</th></tr>";
    
  	foreach($registrants as $registrant) {
