@@ -83,7 +83,7 @@
  		echo "<tr><td>".$registrant['name']."</td>";
  		echo "<td>".$registrant['email']."</td>";
    echo "<td>".$registrant['mobile']."</td>";
-   echo "<td>".$registrant['covid_status']."</td>";
+   echo "<td>".(.$registrant['covid_status'].) ? "Yes" : "No"."</td>";
  		echo "<td>".$registrant['date']."</td></tr>";
      }
   	echo "</table>";
