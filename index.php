@@ -79,7 +79,7 @@
   echo "<th>Covid Status</th>";
  	echo "<th>Date of Testing</th></tr>";
   
-  $result = "Yes"
+  $result = $registrant['covid_status']
 
  	foreach($registrants as $registrant) {
  		echo "<tr><td>".$registrant['name']."</td>";
