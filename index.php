@@ -78,14 +78,12 @@
   echo "<th>Mobile</th>";
   echo "<th>Covid Status</th>";
  	echo "<th>Date of Testing</th></tr>";
-  
-  $result = $registrant['covid_status']
 
  	foreach($registrants as $registrant) {
  		echo "<tr><td>".$registrant['name']."</td>";
  		echo "<td>".$registrant['email']."</td>";
    echo "<td>".$registrant['mobile']."</td>";
-   echo "<td>".$result."</td>";
+   echo "<td>".$registrant['covid_status']."</td>";
  		echo "<td>".$registrant['date']."</td></tr>";
      }
   	echo "</table>";
