@@ -1,6 +1,6 @@
  <html>
  <head>
- <Title>Covid Registration Form</Title>
+ <Title>Covid Portal</Title>
  <style type="text/css">
  	body { background-color: #fff; border-top: solid 10px #000;
  	    color: #333; font-size: .85em; margin: 20; padding: 20;
@@ -16,7 +16,7 @@
  </style>
  </head>
  <body>
- <h1>Register here!</h1>
+ <h1>Report Covid Cases!</h1>
  <p>Fill in your name. email address , mobile number & Covid Test Result & then click <strong>Submit</strong> to register.</p>
  <form method="post" action="index.php" enctype="multipart/form-data" >
        Name  <input type="text" name="name" id="name"/></br>
@@ -71,7 +71,7 @@
  $stmt = $conn->query($sql_select);
  $registrants = $stmt->fetchAll(); 
   if(count($registrants) > 0) {
- 	echo "<h2>People who are registered:</h2>";
+ 	echo "<h2>Covid Report:</h2>";
  	echo "<table>";
  	echo "<tr><th>Name</th>";
  	echo "<th>Email</th>";
@@ -88,7 +88,7 @@
      }
   	echo "</table>";
  } else {
- 	echo "<h3>No one is currently registered.</h3>";
+ 	echo "<h3>No Report added.</h3>";
  }
 
  ?>
