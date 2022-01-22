@@ -79,11 +79,16 @@
   echo "<th>Covid Status</th>";
  	echo "<th>Date of Testing</th></tr>";
 
+  if($registrant['covid_status']){
+      $registrant['covid_status'] = "True"
+  }else {
+      $registrant['covid_status'] = "False" 
+  }
  	foreach($registrants as $registrant) {
  		echo "<tr><td>".$registrant['name']."</td>";
  		echo "<td>".$registrant['email']."</td>";
    echo "<td>".$registrant['mobile']."</td>";
-   echo "<td>".($registrant['covid_status']) ? 'Yes' : 'No'."</td>";
+   echo "<td>".$registrant['covid_status']."</td>";
  		echo "<td>".$registrant['date']."</td></tr>";
      }
   	echo "</table>";
