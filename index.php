@@ -16,7 +16,7 @@
  </style>
  </head>
  <body>
- <h1>Report Covid Cases!</h1>
+ <h1>Register Covid Report!</h1>
  <p>Fill in below details & then click <strong>Submit</strong> to register.</p>
  <form method="post" action="index.php" enctype="multipart/form-data" >
        Name  <input type="text" name="name" id="name"/></br>
