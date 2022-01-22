@@ -19,9 +19,9 @@
  <h1>Register here!</h1>
  <p>Fill in below details & then click <strong>Submit</strong> to register.</p>
  <form method="post" action="index.php" enctype="multipart/form-data" >
-       Name  <input type="text" name="name      " id="name"/></br>
-       Email <input type="text" name="email     " id="email"/></br>
-       Mobile <input type="text" name="mobile   " id="mobile"/></br>
+       Name  <input type="text" name="name" id="name"/></br>
+       Email <input type="text" name="email" id="email"/></br>
+       Mobile <input type="text" name="mobile" id="mobile"/></br>
        Covid Status <select name="covid_status">
        <option value="">Select...</option>
        <option value="No">No</option>
