@@ -24,8 +24,8 @@
        Mobile <input type="text" name="mobile" id="mobile"/></br>
        Covid Status <select name="covid_status">
        <option value="">Select...</option>
-       <option value="0">No</option>
-       <option value="1">Yes</option>
+       <option value="N">No</option>
+       <option value="Y">Yes</option>
        </select></br>
        
        <input type="submit" name="submit" value="Submit" />
@@ -78,12 +78,7 @@
   echo "<th>Mobile</th>";
   echo "<th>Covid Status</th>";
  	echo "<th>Date of Testing</th></tr>";
-
-  if($registrant['covid_status']){
-      $registrant['covid_status'] = "True"
-  }else {
-      $registrant['covid_status'] = "False" 
-  }
+   
  	foreach($registrants as $registrant) {
  		echo "<tr><td>".$registrant['name']."</td>";
  		echo "<td>".$registrant['email']."</td>";
